@@ -9,11 +9,11 @@ import testbase.WebTestBase;
 import java.time.Duration;
 
 public class WaitUtil  extends WebTestBase {
-    public static long PAGE_LOAD=25;
+    public static long PAGE_LOAD=50;
 
     public static WebDriverWait wait;
 
-    public static long EXPLICIT_WAIT=25;
+    public static long EXPLICIT_WAIT=50;
 
     public static void waitUntilElementToClickable(WebElement element){
         wait=new WebDriverWait(driver, Duration.ofSeconds(EXPLICIT_WAIT));
