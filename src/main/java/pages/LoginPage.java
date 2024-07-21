@@ -26,6 +26,7 @@ public class LoginPage extends WebTestBase{
     }
 
     public void login(String userName, String password){
+
         WebDriverUtil.sendKeysToElement(loginUsernameTextbox,userName);
         WebDriverUtil.sendKeysToElement(loginPasswordTextbox,password);
         WaitUtil.waitUntilElementToClickable(loginBtn);
